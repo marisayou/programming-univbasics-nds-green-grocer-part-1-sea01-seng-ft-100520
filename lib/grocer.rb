@@ -8,7 +8,7 @@ end
 
 def consolidate_cart(cart)
   
-  consolidated_cart = {}
+  consolidated_cart = []
   cart.each do |item|
     consolidated_item = find_item_by_name_in_collection(item[:item], consolidated_cart)
     if consolidated_item
